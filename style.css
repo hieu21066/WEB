@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to right, rgb(167, 215, 240),rgb(229, 234, 236));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+    background-image: url("/image/img4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.page2{
+    background-image: url("/image/img3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.le{
+    background-color: aliceblue;
+    color:rgb(84, 128, 113);
+}
+
+.chan{
+    background-color: rgb(222, 198, 244);
+    color:rgb(8, 143, 98)
+}
+
+#s1{
+    background-color: aquamarine;
+}
+
+p{
+    font-family: sans-serif, Lucida Sans, Arial;
+    font-size: 19px;
+    font-style:italic;
+    font-weight:300;
+    text-decoration: underline;
+    color:blue ;
+}
+
+.test_border{
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    border-radius:20px;
+    padding:10px;
+}
+
+img{
+    width:300px;
+}
+*{
+    color:rgb(0, 255, 47)
+}
+
+#box1{
+    width: 200px;
+    height:200px;
+    border-style:solid;
+    background-color: rgb(224, 237, 156);
+    color:black;
+}
+
+#box2{
+    width:200px;
+    height:200px;
+    border-style:solid;
+    background-color: rgb(109, 211, 136);
+    color:black;
+    margin-top:10px;
+}

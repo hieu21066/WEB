@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name = "Home description" content = "Home">
+    <meta name = "Keywords" content = "Home HTML CSS ">
+    <meta name = "author" content = "Hiếu">
+
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+     <h1>WEBSITE</h1>
+        <p id = "s1" class="le">Văn bản <b>bold</b></p>
+        <p class="chan">văn bản <i>italic</i></p>
+        <p class="le">văn bản <big>big</big></p>
+        <p class="chan">văn bản <small>smaill</small></p>
+        <p class="le">văn bản <sub>sub</sub></p>
+        <p class="chan">văn bản <del>delete </del></p>
+        <p class="le">văn bản <ins>insert</ins></p>
+        <p class="chan">văn bản <mark>marked</mark></p>
+
+        <hr> <!-- Horizontal line-->
+
+        <a href = "https://www.facebook.com" target = "_blank"> <!-- or _self-->
+            Facebook
+        </a>
+
+        <br> <!-- New line-->
+
+        <a href = "/page/page2.html" target = "_self">
+            Page 2
+        </a>
+        <br>
+        <a href = "mailto:hieu242106@gmail.com">
+           hieu242106@gmail.com
+        </a>
+        
+        <hr>
+
+        <img src = "/image/img1.png" alt = "IMG1" title = "img1">
+        <img src = "image/img2.png">
+        
+        <hr>
+
+        <audio src = "/audio/call_of_silence.mp3" controls loop></audio>
+        <br>
+        <audio controls>
+            <source src = "/audio/final_homework.mp3" type = "audio/mpeg">
+           <source src = "/audio/call_of_silence.mp3" type = "audio/mpeg">
+           
+        </audio>
+
+        <hr>
+
+        <video src = "video/final_homework.mp4" controls></video>
+        <hr>
+
+        <h3>LIST</h3>
+        
+        <h4>Unordered List</h4>
+          <ul>
+               <li>Hoa quả</li>
+               <li>Thịt</li>
+               <li>Rau</li>
+          </ul>
+        
+        <h4>Ordered List</h4>
+           <ol type = "1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+           </ol>
+        
+        <h4>Description List</h4>
+           <dl>
+              <dt> Món ngon </dt>
+              <dd>Pizza, Hamburger</dd>
+              <dt> Món ngon </dt>
+              <dd>Pizza, Hamburger</dd>
+              <dt> Món ngon </dt>
+              <dd>Pizza, Hamburger</dd>
+           </dl>
+        
+        <h4>Nested List</h4>
+          <ul>
+               <li>Hoa quả</li>
+               <li>Thịt</li>
+                  <ol type = "a">
+                    <li>Bò</li>
+                    <li>Lợn</li>
+                    <li>Chuối</li>
+                  </ol>
+               <li>Rau</li>
+          </ul>
+
+          <hr>
+
+          <h4>Table</h4>
+          <table>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Ngành</th>
+            </tr>
+            <tr>
+                 <th>01</th>
+                 <td>Hiếu</td>
+                 <td>Software Engineer</td>
+            </tr>
+          </table>
+
+
+        <h4>Div - Gom phần tử theo khối</h4>
+        <p><div>Not tryna be in there, not tryna be cool,</div> just tryna be in this. Tell me how you choose?
+           Can you feel where the wind is?
+        </p>
+
+        <h4>Span - Gom phần tử theo dòng</h4>
+        <p class = "test_border"><span>Not tryna be in there, not tryna be cool,</span> just tryna be in this. Tell me how you choose?
+           Can you feel where the wind is?
+        </p>
+
+        <h4>Iframe - Nhúng</h4>
+        <br>
+        <iframe src = "/page/page2.html"></iframe>
+        <hr>
+        <p4>button</p4>
+        <br>
+        <button>
+            Click me!
+        </button>
+        
+        <form>
+    <div>
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="fname" placeholder="First" required>
+    </div>
+    <br>
+    <div>
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lname" placeholder="Last" required>
+    </div>
+     <br>
+     <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" maxlengh="8" required >
+     </div>
+     <br>
+     <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required >
+     </div>
+     <br>
+     <div>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required >
+     </div>
+     <br>
+     <div>
+        <label for="bdate">Birthdate:</label>
+        <input type="date" id="bdate" name="bdate"  required >
+     </div>
+     <br>
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="99" value="0" required >
+     </div>
+     <br>
+    <div>
+        <label for="title">Role:</label>
+
+        <input type = "radio" name = "role" value="Student">Student
+        <input type = "radio" name = "role" value="Teacher">Teacher
+        <input type = "radio" name = "role" value="Staff">Staff
+
+    </div>
+    <br>
+    <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa">Visa</option>
+            <option value="card">Card</option>
+            <option value="giftcard">Giftcard</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="english">English:</label>
+        <input type="checkbox" id="english" name="english">
+    </div>
+    <br>
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+<div id = "box1">
+    BOX1: margin - outside
+</div>
+<div id = "box2">
+    BOX2: padding - inside
+</div>
+</body>
+</html>
