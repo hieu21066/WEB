@@ -58,18 +58,56 @@ img{
 }
 
 #box1{
-    width: 200px;
-    height:200px;
+    width: 170px;
+    height:20px;
     border-style:solid;
     background-color: rgb(224, 237, 156);
     color:black;
+    position:fixed;
+    right:0px;
+    top:0px;
+    //static: mặc định;
+    //relative: working with top-bot-left-right;
+    // move the image but not feature;
+    //absolute - both image and feature;
+    text-align:center;
 }
 
 #box2{
     width:200px;
-    height:200px;
+    height:50px;
     border-style:solid;
     background-color: rgb(109, 211, 136);
     color:black;
-    margin-top:10px;
+    position:absolute;
+    top:10px;
+    left:300px;
+    padding-top:10px;
+}
+
+button{
+    border-radius:10px;
+    padding:6px 12px;/* Trên/Dưới 12px, Trái/Phải 24px */
+    font-size:15px;
+    display:inline-block;
+}
+
+#test1{
+    border:1px solid black;
+    width:70px;
+    height:40px;
+    background-color:rgb(24, 75, 122);
+    position:sticky;
+    padding:5px;
+    top:10px;
+    z-index: 999;
+}
+
+#test2{
+    border:1px solid black;
+    width:50px;
+    height:20px;
+    background-color:rgb(36, 82, 34);
+    position:absolute;
+    margin-top:4px;
 }
