@@ -1,3 +1,6 @@
+*{
+    color:rgb(0, 255, 47)
+}
 body{
     background: linear-gradient(to right, rgb(167, 215, 240),rgb(229, 234, 236));
     background-repeat: no-repeat;
@@ -39,7 +42,7 @@ p{
     font-style:italic;
     font-weight:300;
     text-decoration: underline;
-    color:blue ;
+    color:rgb(237, 237, 244) ;
 }
 
 .test_border{
@@ -51,12 +54,15 @@ p{
 }
 
 img{
-    width:300px;
+    width:350px;
 }
-*{
-    color:rgb(0, 255, 47)
+video{
+    width:600px;
 }
-
+iframe{
+    width:600px;
+    height:300px;
+}
 #box1{
     width: 170px;
     height:20px;
@@ -69,27 +75,36 @@ img{
     //static: mặc định;
     //relative: working with top-bot-left-right;
     // move the image but not feature;
-    //absolute - both image and feature;
+    //absolute,fixed - both image and feature;
     text-align:center;
 }
 
 #box2{
-    width:200px;
-    height:50px;
+    width:170px;
+    height:30px;
     border-style:solid;
     background-color: rgb(109, 211, 136);
     color:black;
     position:absolute;
-    top:10px;
-    left:300px;
+    top:20px;
+    right:0px;
+    margin-top:10px;
     padding-top:10px;
 }
 
-button{
+button:hover{
     border-radius:10px;
     padding:6px 12px;/* Trên/Dưới 12px, Trái/Phải 24px */
     font-size:15px;
     display:inline-block;
+    
+    /* pseudo-class */
+    background-color: rgb(24, 35, 138);
+
+}
+
+button:active{
+    background-color:rgb(123, 255, 132) ;
 }
 
 #test1{
@@ -110,4 +125,49 @@ button{
     background-color:rgb(36, 82, 34);
     position:absolute;
     margin-top:4px;
+}
+
+#webtitle{
+    color:rgba(9, 255, 0, 0.812);
+    text-shadow:-5px 5px 7px rgb(8, 67, 193),5px 5px 7px rgb(205, 11, 30);
+    box-shadow:0px 5px 6px rgb(35, 193, 35);
+}
+
+#trans{
+    border:solid 2px black;
+    width:200px;
+    height:200px;
+    background-color:rgb(255, 255, 255) ;
+    color:rgb(16, 0, 246);
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    /* align-items: center; 
+    justify-content: center; */
+    
+
+    /* transform: translateX(40px); */
+    transform:translate(40px,50px);
+    transform: rotateX(180deg);
+    transform:scaleX(1); 
+    transform:skewX(45deg);
+    /* transform: matrix(0,0,0,0,0,0);
+    /* */
+    scaleX
+    skewY
+    skewX
+    scaleY
+    translateX
+    translateY
+     */
+}
+
+li:nth-child(2){ /* odd, even, 3n*/
+    color:white;
+}
+
+@media all and (max-width:768px){
+    #webtitle{
+        color:blue;
+    }
 }
